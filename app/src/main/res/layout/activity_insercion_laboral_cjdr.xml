@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpcionesCjdr.InsercionLaboralCjdrActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:dividerPadding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="24sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/outline_chevron_left_24"
+                    android:backgroundTint="@color/Pronacej3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Elige una de las \nopciones"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="@color/Pronacej3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_2">
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_1"
+                        tools:ignore="DuplicateIds" />
+
+                    <ImageView
+                        android:id="@+id/imageView91"
+                        android:layout_width="0dp"
+                        android:layout_height="71dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_diversity_3_24"
+                        app:tint="@color/white"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Inserción laboral\ndurante el mes"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView91"
+                        app:layout_constraintStart_toStartOf="@+id/imageView91"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView91"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_3"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_2" />
+
+                    <ImageView
+                        android:id="@+id/imageView90"
+                        android:layout_width="156dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_psychology_24"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Seguro Médico"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView90"
+                        app:layout_constraintStart_toStartOf="@+id/imageView90"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView90"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView160"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/imgministerio"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/logopronacej"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

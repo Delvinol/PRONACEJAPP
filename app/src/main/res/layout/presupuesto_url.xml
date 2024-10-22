@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0"
+    tools:context=".InfoPublica.PresupuestoPublicoActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/baseline_home_24"
+            android:backgroundTint="@color/Pronacej3"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Inversiones"
+                android:textColor="#363636"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="193dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/Pronacej3"
+            android:text="Atrás"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+                android:padding="8dp"
+                android:stretchColumns="1">
+
+
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

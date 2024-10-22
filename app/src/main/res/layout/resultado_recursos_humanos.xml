@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context=".InfoPublica.RecursosHumanosGrafico">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/baseline_home_24"
+            android:backgroundTint="@color/Pronacej3"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Número de Trabajadores\n según Función"
+                android:textColor="#363636"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="193dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/Pronacej3"
+            android:text="Atrás"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="8dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/imgministerio" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logopronacej" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barChart"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTotalCantidad1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTotal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:text="Total\nTrabajadores" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20sp"></com.github.mikephil.charting.charts.HorizontalBarChart>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAlfonsoUgartePorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAlfonso_Ugarte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_1"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMarcavallePorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMarcavalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPucallpaPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPucallpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_3"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEl_Tambo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_4"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTrujilloPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTrujillo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_5"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJose_Quinones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_6"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_7"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMiguel_Grau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_7"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSanta_Margarita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_8"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_9"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoIII"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLimaPorcentaje"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_10"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_10"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAlfonsoUgartePorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAlfonso_UgarteNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_1"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMarcavallePorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMarcavalleNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPucallpaPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPucallpaNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_3"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_4"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTrujilloPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTrujilloNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_5"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_6"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_7"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_7"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_8"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_9"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIINUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLimaPorcentajeNUEVO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_10"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLimaNUEVO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_10"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAlfonsoUgartePorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAlfonso_UgarteNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_1"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMarcavallePorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMarcavalleNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPucallpaPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPucallpaNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_3"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_4"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTrujilloPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTrujilloNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_5"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_6"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_7"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_7"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_8"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_9"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIINUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLimaPorcentajeNUEVO2"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_10"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLimaNUEVO2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_10"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAlfonsoUgartePorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAlfonso_UgarteNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_1"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMarcavallePorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMarcavalleNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPucallpaPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPucallpaNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_3"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_4"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTrujilloPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTrujilloNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_5"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_6"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_7"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_7"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_8"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_9"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIINUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="30sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewLimaPorcentajeNUEVO3"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_10"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLimaNUEVO3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_10"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAlfonsoUgartePorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAlfonso_UgarteNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_1"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMarcavallePorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMarcavalleNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_2"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPucallpaPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPucallpaNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_3"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEl_TamboNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_4"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTrujilloPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTrujilloNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_5"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_6"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewJose_QuinonesNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_6"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_7"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMiguel_GrauNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_7"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSanta_MargaritaNUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_8"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO4"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_9"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIINUEVO4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO_UNO"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_5"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexoNUEVO_UNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO_DOS"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexo_NUEVO_DOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:layout_marginRight="0sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewAnexoIIIPorcentajeNUEVO_TRES"
+                    android:layout_width="150dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/btn_bkg_2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAnexo_NUEVO_TRES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/bkg_btn_9"
+                    android:gravity="center|left"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

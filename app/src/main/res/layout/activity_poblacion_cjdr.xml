@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpcionesCjdr.PoblacionCjdrActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:foreground="@drawable/hover_effect"
+
+                android:id="@+id/buttonHome"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/baseline_home_24"
+                android:backgroundTint="@color/Pronacej3"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+                app:layout_constraintStart_toEndOf="@+id/buttonHome"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Elige una de las \nopciones"
+                    android:textColor="#363636"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="193dp"
+                    tools:layout_editor_absoluteY="14dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:foreground="@drawable/hover_effect"
+
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/Pronacej3"
+                android:text="Atrás"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout0">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65sp"
+                android:layout_marginEnd="32sp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Fecha" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="60sp"
+                android:layout_marginEnd="24sp"
+                android:layout_marginBottom="12sp">
+
+                <Button
+                    android:id="@+id/etFechaInicio"
+                    style="?android:spinnerStyle"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"
+                    android:drawableEnd="@drawable/baseline_date_range_24"
+                    android:drawableTint="@color/bluePronacej"
+                    android:onClick="openMonthYearPicker"
+                    android:paddingStart="16sp"
+                    android:paddingEnd="16sp"
+                    android:text="ENE 2024"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvErrorFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formato de fecha incorrecto"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etFechaInicio"
+                tools:ignore="NotSibling" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:foreground="@drawable/hover_effect"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/btn_background_oficial_2">
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_1"
+                        tools:ignore="DuplicateIds" />
+
+                    <ImageView
+                        android:id="@+id/imageView91"
+                        android:layout_width="0dp"
+                        android:layout_height="71dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_how_to_reg_24"
+                        app:tint="@color/white"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Población\nCJDR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView61"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView91"
+                        app:layout_constraintStart_toStartOf="@+id/imageView91"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView91"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion2"
+                    android:foreground="@drawable/hover_effect"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_3">
+
+                    <ImageView
+                        android:id="@+id/imageView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_2" />
+
+                    <ImageView
+                        android:id="@+id/imageView900"
+                        android:layout_width="156dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_menu_book_24"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Procesados y\nSentenciados"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView60"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView900"
+                        app:layout_constraintStart_toStartOf="@+id/imageView900"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView900"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion3"
+                    android:foreground="@drawable/hover_effect"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_5">
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_3"
+                        tools:ignore="DuplicateIds" />
+
+                    <ImageView
+                        android:id="@+id/imageView91"
+                        android:layout_width="0dp"
+                        android:layout_height="71dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_co_present_24"
+                        app:tint="@color/white"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Ingresos y\nEgresos"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView91"
+                        app:layout_constraintStart_toStartOf="@+id/imageView91"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView91"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/hover_effect"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_6">
+
+                    <ImageView
+                        android:id="@+id/imageView70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView90"
+                        android:layout_width="156dp"
+                        android:layout_height="75dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.44"
+                        app:srcCompat="@drawable/baseline_contact_page_24"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Mayores y\nMenores"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView90"
+                        app:layout_constraintStart_toStartOf="@+id/imageView90"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView90"
+                        tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView160"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/imgministerio"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/logopronacej"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

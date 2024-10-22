@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pronacej</string>
+    <string name="enviar_correo">Enviar correo electrónico</string>
+
+    <string-array name="year_array">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+
+    <string-array name="year_arrayTraslado">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+
+    <string-array name="years_array">
+        <item>2023</item>
+        <item>2024</item>
+    </string-array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bluePronacej">#00aae6</color>
+    <color name="Pronacej1">#00a3e2</color>
+    <color name="Pronacej2">#e62984</color>
+    <color name="Pronacej3">#474c55</color>
+    <color name="Pronacej4">#fcea00</color>
+    <color name="Pronacej5">#0090d4</color>
+    <color name="Pronacej6">#cad200</color>
+    <color name="Pronacej7">#49D200</color>
+    <color name="Pronacej8">#D20019</color>
+    <color name="Pronacej9">#D28500</color>
+    <color name="Pronacej10">#A500D2</color>
+
+    <color name="colorPIM">#FF5722</color> <!-- Color para el Monto PIM -->
+    <color name="colorDevengado">#4CAF50</color>
+</resources>

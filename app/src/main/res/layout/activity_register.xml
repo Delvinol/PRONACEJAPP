@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitysPadres.RegisterActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/logoapp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Solicitud de Registro"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_background"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="40dp"
+                android:paddingTop="5dp"
+                android:text="Nombres"
+                android:textColor="#7a797f" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_person_outline_24"
+                android:drawableTint="@color/bluePronacej"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_background"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="40dp"
+                android:paddingTop="5dp"
+                android:text="Apellidos"
+                android:textColor="#7a797f" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_diversity_1_24"
+                android:drawableTint="@color/bluePronacej"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_background"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="40dp"
+                android:paddingTop="5dp"
+                android:text="Entidad"
+                android:textColor="#7a797f" />
+
+            <EditText
+                android:id="@+id/etEntity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_home_repair_service_24"
+                android:drawableTint="@color/bluePronacej"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_background"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="40dp"
+                android:paddingTop="5dp"
+                android:text="N° de Dni"
+                android:textColor="#7a797f" />
+
+            <EditText
+                android:id="@+id/etDni"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_contact_page_24"
+                android:drawableTint="@color/bluePronacej"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_background"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingStart="40dp"
+                android:paddingTop="5dp"
+                android:text="Email"
+                android:textColor="#7a797f" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_attach_email_24"
+                android:drawableTint="@color/bluePronacej"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Enviar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

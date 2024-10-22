@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitysPadres.MenuTotalesSoaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:dividerPadding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="24sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/outline_chevron_left_24"
+                    android:backgroundTint="@color/Pronacej3" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:tint="#9200BCD4"
+                    app:srcCompat="@drawable/baseline_person_outline_24"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Bienvenido\nMiguel"
+                    android:textColor="#363636"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#363636"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/baseline_home_24"
+                    android:backgroundTint="@color/Pronacej3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Elige tu categoría"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_1">
+
+                    <ImageView
+                        android:id="@+id/imageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_1" />
+
+                    <ImageView
+                        android:id="@+id/imageView02"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_poblacion_total"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Población Total"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView02"
+                        app:layout_constraintStart_toStartOf="@+id/imageView02"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView02" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion1"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_6">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_poblacion"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Población \n Edad Simple"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                        app:layout_constraintStart_toStartOf="@+id/imageView16"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_3">
+
+                    <ImageView
+                        android:id="@+id/imageView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView06"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_insercion_educativa"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Inserción \n educativa"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView06"
+                        app:layout_constraintStart_toStartOf="@+id/imageView06"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView06" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion4"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_5">
+
+                    <ImageView
+                        android:id="@+id/imageView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_4" />
+
+                    <ImageView
+                        android:id="@+id/imageView08"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_insercion_laboral"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Inserción\nlaboral"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView08"
+                        app:layout_constraintStart_toStartOf="@+id/imageView08"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView08" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_4">
+
+                    <ImageView
+                        android:id="@+id/imageView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_1" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_infracciones_cometidas"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Infracciones \n cometidas"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                        app:layout_constraintStart_toStartOf="@+id/imageView10"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/Opcion2"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background_oficial_2">
+
+                    <ImageView
+                        android:id="@+id/imageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/light_2" />
+
+                    <ImageView
+                        android:id="@+id/imageView04"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:tint="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.3"
+                        app:srcCompat="@drawable/imgp_tratamiento_diferenciado"
+                        tools:ignore="UseAppTint" />
+
+                    <TextView
+                        android:id="@+id/textView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="Tratamiento \n diferenciado"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView04"
+                        app:layout_constraintStart_toStartOf="@+id/imageView04"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView04" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView160"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/imgministerio"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/imageView1601"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/logopronacej"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

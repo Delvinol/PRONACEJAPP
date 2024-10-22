@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paspe.FiltroEducativaPaspe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/baseline_home_24"
+            android:backgroundTint="@color/Pronacej3"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Elegir fecha\ndel gráfico"
+                android:textColor="#363636"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="193dp"
+                tools:layout_editor_absoluteY="14dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/Pronacej3"
+            android:text="Atrás"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout0">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32sp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Fecha a buscar" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="24sp"
+            android:layout_marginEnd="24sp"
+            android:layout_marginBottom="12sp">
+
+            <Button
+                android:id="@+id/btnMonthYearPicker"
+                style="?android:spinnerStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_border"
+                android:drawableEnd="@drawable/baseline_date_range_24"
+                android:drawableTint="@color/bluePronacej"
+                android:onClick="openMonthYearPicker"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text="ENE 2024"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_search_category_default"
+                android:backgroundTint="#00aae6"
+                android:onClick="showSelectedDate"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/etFechaInicio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etFechaInicio"
+                app:layout_constraintTop_toTopOf="@+id/etFechaInicio" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <CheckBox
+            android:id="@+id/cbIncluirEstadoIng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTIVOS: Adolescentes que están siendo atendidos" />
+
+        <CheckBox
+            android:id="@+id/cbIncluirEstadoAten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ATENDIDOS: Población acumulada en un periodo" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvErrorFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formato de fecha incorrecto"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaInicio"
+        tools:ignore="NotSibling" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="8dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/imgministerio" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logopronacej" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

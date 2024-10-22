@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Otros estilos ... -->
+
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:colorControlNormal">#CCCCCC</item>
+    </style>
+</resources>

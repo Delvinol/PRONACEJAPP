@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonHome"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/baseline_home_24"
+            android:backgroundTint="@color/Pronacej3"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+            app:layout_constraintStart_toEndOf="@+id/buttonHome"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Inversiones 2023"
+                android:textColor="#363636"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:foreground="@drawable/hover_effect"
+
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/Pronacej3"
+            android:text="Atrás"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout0">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- El contenido de tu TableLayout permanece igual -->
+
+                <TableRow
+                    android:background="#51B435"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="SEC"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="UNIDAD"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="DEPARTAMENTO"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="PROVINCIA"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="DISTRITO"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="MONTO PIM"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="MONTO DEVENGADO"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="PORCENTAJE"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Aquí comienzan las filas de datos -->
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0001" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UNIDAD DE PLANEAMIENTO, PRESUPUESTO Y MODERNIZACION" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 819.217,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 818.008,29" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,85%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0002" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="DIRECCION EJECUTIVA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.419.024,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.417.325,11" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,88%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0003" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UNIDAD DE ADMINISTRACION" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.899.978,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.892.231,42" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,59%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0004" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UNIDAD DE GESTION DE RECURSOS HUMANOS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 717.532,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 672.432,45" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="93,71%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0005" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SUBUNIDAD DE ABASTECIMIENTO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CIENEGUILLA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 660.348,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 660.316,86" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0006" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SUBUNIDAD DE TECNOLOGIAS DE LA INFORMACION Y COMUNICACIONES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SAN ISIDRO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 658.120,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 649.564,77" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,70%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0007" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SUBUNIDAD DE CONTABILIDAD Y FINANZAS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 5.280.648,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 5.188.416,45" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,25%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0008" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UNIDAD DE ASESORIA JURIDICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 2.540.547,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 2.522.661,73" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,30%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0009" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 7.745.557,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 717.682,68" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,64%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0010" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CIENEGUILLA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.274.347,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.274.337,49" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0011" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 610.802,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 610.799,58" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0012" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UGMSI" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="0,00%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0013" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UAPISE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="0,00%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0014" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UGMSNPL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="0,00%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0015" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="UGSICJ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIMENTEL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 376.600,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 376.599,55" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0016" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA HUARAZ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="0,00%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0017" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA CHIMBOTE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 38.000,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 38.000,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0018" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 0,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="0,00%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0019" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 2.382.786,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 800.088,02" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="33,58%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0020" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA PAUCARPATA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ANCASH" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUARAZ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUARAZ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 205.425,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 205.422,65" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0021" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA AYACUCHO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ANCASH" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SANTA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHIMBOTE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 164.432,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 164.431,72" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0022" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.854.043,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.791.698,49" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,38%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0023" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA VENTANILLA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="MARIANO MELGAR" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 321.424,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 321.411,22" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0024" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AREQUIPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PAUCARPATA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 143.907,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 122.251,08" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="84,95%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0025" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AYACUCHO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUAMANGA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AYACUCHO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 135.803,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 135.794,64" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,99%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0026" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA HUANCAVELICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PROVINCIA CONSTITUCIONAL DEL CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PROV. CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 407.928,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 404.717,66" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,21%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0027" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA HUANUCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PROVINCIA CONSTITUCIONAL DEL CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PROV. CALLAO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="VENTANILLA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 320.559,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 319.593,08" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,70%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0028" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA ICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 256.056,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 256.055,46" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0029" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA HUANCAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="WANCHAQ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.800.139,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.784.725,99" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,59%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0030" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR HUANCAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAVELICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAVELICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAVELICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 232.541,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 232.539,07" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0031" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANUCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANUCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="AMARILIS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 209.014,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 209.012,58" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0032" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ICA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA TINGUINA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 243.634,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 236.226,09" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="96,96%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0033" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="JUNIN" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 242.455,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 242.392,45" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,97%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0034" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="JUNIN" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUANCAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="EL TAMBO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.381.173,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.350.191,62" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,08%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0035" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR ANCON" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.882.884,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.839.914,88" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,89%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0036" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA LIMA ESTE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="EL PORVENIR" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 212.385,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 212.175,87" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,90%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0037" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA LIMA NORTE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 230.352,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 230.350,65" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0038" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR SANTA MARGARITA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIMENTEL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.766.922,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.696.071,68" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,12%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0039" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ANCON" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.256.523,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 3.253.649,76" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,91%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0040" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="ATE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 457.143,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 453.751,49" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,26%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0041" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA CAÑETE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="INDEPENDENCIA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 534.142,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 532.530,40" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,70%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0042" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA HUAURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 2.828.087,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 2.775.195,32" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98,13%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0043" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA IQUITOS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="RIMAC" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 780.151,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 772.516,38" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,02%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0044" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA MADRE DE DIOS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SAN MIGUEL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 14.934.880,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 14.883.224,94" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,65%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0045" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CAÑETE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 180.498,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 180.497,45" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0046" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA SULLANA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="HUAURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 139.144,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 139.143,72" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0047" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA PUNO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LORETO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="MAYNAS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="IQUITOS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 183.703,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 183.101,45" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,67%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0048" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA TUMBES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="MADRE DE DIOS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TAMBOPATA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TAMBOPATA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 184.726,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 184.724,15" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0049" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA PUCALLPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.163.372,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.146.057,76" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99,58%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0050" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="CJDR PUCALLPA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SULLANA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SULLANA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 124.048,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 124.046,61" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0051" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="SOA SELVA CENTRAL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PUNO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PUNO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PUNO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 285.472,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 285.470,65" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0052" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR COMPUTADORAS" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TUMBES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TUMBES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TUMBES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 107.388,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 107.387,65" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0053" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR TALLERES" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="UCAYALI" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CORONEL PORTILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CALLARIA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 330.931,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 330.922,30" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0054" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR SEGURIDAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="UCAYALI" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CORONEL PORTILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="NUEVA REQUENA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.378.802,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.345.728,64" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99.24%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0055" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR SEGURIDAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SAN ISIDRO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 846.377,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 835.556,32" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98.72%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0056" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR SEGURIDAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="WANCHAQ" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.437.090,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 1.347.284,37" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="93.75%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0057" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR MOBILIARIO Y EQUIPO TACTICO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 210.738,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 210.737,12" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0058" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR MOBILIARIO Y EQUIPO TACTICO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="VEINTISEIS DE OCTUBRE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.975,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 4.974,05" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="99.98%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0059" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR MOBILIARIO Y EQUIPO TACTICO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 24.000,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 24.000,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0060" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR MOBILIARIO Y EQUIPO TACTICO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 81.330,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 81.330,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0061" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIMENTEL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 201.063,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 198.696,22" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="98.82%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0062" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 99.250,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 99.250,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0063" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LIMA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LINCE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 100.200,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 100.200,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0064" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR CUSCO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LAMBAYEQUE" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHICLAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="PIMENTEL" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 520.294,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 520.294,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0065" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="IOARR TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="LA LIBERTAD" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="TRUJILLO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="SALAVERRY" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 479.118,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 479.118,00" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="100%" />
+                </TableRow>
+
+                <TableRow android:background="#F0F7F7" android:padding="5dp">
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="0066" />
+                    <TextView android:layout_width="200dp" android:layout_height="wrap_content" android:text="PROYECTO PIURA" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="JUNIN" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHANCHAMAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="CHANCHAMAYO" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 34.473,00" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:text="S/ 28.112,53" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:text="81.55%" />
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/imageView160"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/imgministerio" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/logopronacej" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
